@@ -13,6 +13,7 @@ Creating user management infrastructure is time consuming, with many edge cases 
 1. Is highly-available
 1. Is secured
 1. Is HIPAA-compliant
+1. Is PCI-compliant
 
 AWS Cognito supports JWT tokens and can secure API endpoints with JWT-based authentication.
 
