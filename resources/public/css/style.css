@@ -1,0 +1,189 @@
+body {
+  background: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(136, 152, 170, 0.3); }
+
+input[type="email"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(136, 152, 170, 0.3); }
+
+input[type="email"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(136, 152, 170, 0.3); }
+
+input[type="email"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(136, 152, 170, 0.3); }
+
+a {
+  color: #6772e5;
+  transition: all 0.15s ease; }
+  a:hover {
+    color: #32325d;
+    text-decoration: none; }
+
+.btn-default {
+  transition: all 0.15s ease; }
+  .btn-default, .btn-default:hover {
+    background: #6772e5;
+    color: white;
+    border: 0; }
+  .btn-default:hover {
+    background: #8898aa; }
+
+label {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8898aa; }
+
+.btn {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .form .btn {
+    margin-top: 20px; }
+
+.panel-default {
+  margin: 40px 0;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  transition-property: color, background-color, box-shadow, transform;
+  transition-duration: .15s;
+  border: 0; }
+  .panel-default > .panel-heading {
+    background: none;
+    border-color: rgba(207, 215, 223, 0.35);
+    text-align: center; }
+    .panel-default > .panel-heading h1 {
+      margin: 13px 0 10px;
+      font-size: 17px;
+      line-height: 26px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .025em;
+      color: #6772e5; }
+
+.panel-body {
+  padding: 35px 40px 40px; }
+
+.navbar {
+  background: #232a40;
+  border-radius: 0;
+  border: 0; }
+  .navbar,
+  .navbar .navbar-text {
+    color: white; }
+  .navbar a {
+    cursor: pointer;
+    color: #d0deee; }
+    .navbar a:hover {
+      color: #f6f9fc; }
+
+.navbar-right {
+  float: right !important; }
+
+.navbar-left {
+  float: left !important; }
+
+ul.navbar-right {
+  margin: 0 0 0 10px;
+  padding: 0; }
+  ul.navbar-right li {
+    list-style: none; }
+    ul.navbar-right li a {
+      display: inline-block;
+      padding: 15px 20px; }
+      ul.navbar-right li a i {
+        display: inline-block;
+        margin-right: 7px; }
+
+.brand {
+  position: relative;
+  display: block;
+  width: 55px;
+  height: 50px;
+  margin-left: -15px;
+  background: #6772e5; }
+  .brand img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -16px;
+    width: 31px;
+    height: auto; }
+
+.password-form-group {
+  margin-bottom: 5px; }
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 50px; }
+
+.mask-loading {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%); }
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto; }
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6772e5;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+
+.auth-token {
+  background: white;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */ }

@@ -1,0 +1,238 @@
+// VARIABLES
+$light-border-color: rgba(207, 215, 223, 0.35);
+$light-text-color: #8898aa;
+$placeholder-color: rgba(136, 152, 170, 0.3);
+$light-grey-bg: #f6f9fc;
+$accent-text-color:#6772e5;
+body {
+    background: $light-grey-bg;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $placeholder-color;
+}
+
+input[type="email"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $placeholder-color;
+}
+
+input[type="email"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $placeholder-color;
+}
+
+input[type="email"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: $placeholder-color;
+}
+
+a {
+    color: #6772e5;
+    transition: all 0.15s ease;
+    &:hover {
+        color: #32325d;
+        text-decoration: none;
+    }
+}
+
+.btn-default {
+    transition: all 0.15s ease;
+    &,
+    &:hover {
+        background: #6772e5;
+        color: white;
+        border: 0;
+    }
+    &:hover {
+        background: $light-text-color;
+    }
+}
+
+label {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $light-text-color;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .form & {
+        margin-top: 20px;
+    }
+}
+
+.panel-default {
+    margin: 40px 0;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    transition-property: color, background-color, box-shadow, transform;
+    transition-duration: .15s;
+    border: 0;
+    &>.panel-heading {
+        background: none;
+        border-color: $light-border-color;
+        text-align: center;
+        h1 {
+            margin: 13px 0 10px;
+            font-size: 17px;
+            line-height: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .025em;
+            color: $accent-text-color;
+        }
+    }
+}
+
+.panel-body {
+    padding: 35px 40px 40px;
+}
+
+.navbar {
+    background: #232a40;
+    border-radius: 0;
+    border: 0;
+    &,
+    .navbar-text {
+        color: white;
+    }
+    a {
+        cursor: pointer;
+        color: #d0deee;
+        &:hover {
+            color: $light-grey-bg;
+        }
+    }
+}
+
+.navbar-right {
+    float: right !important;
+}
+
+.navbar-left {
+    float: left !important;
+}
+
+ul.navbar-right {
+    margin: 0 0 0 10px;
+    padding: 0;
+    li {
+        list-style: none;
+        a {
+            display: inline-block;
+            padding: 15px 20px;
+            i {
+                display: inline-block;
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+.brand {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 50px;
+    margin-left: -15px;
+    background: $accent-text-color;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -18px;
+        margin-left: -16px;
+        width: 31px;
+        height: auto;
+    }
+}
+
+.password-form-group {
+    margin-bottom: 5px;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.mask-loading {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: $accent-text-color;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+.auth-token {
+    background: white;
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
